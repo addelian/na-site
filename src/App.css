@@ -1,38 +1,68 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+.page {
+  background: url("/assets/images/hazy.jpg");
+  background-color: #03719C;
+  background-size: cover;
+  color: #fff;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.page2 {
+  background: url("/assets/images/acoustic.jpg");
+  background-color: #03719C;
+  background-size: cover;
+  color: #fff;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.site-footer {
+  margin-top: 0px;
+  background-color: #535857;
+  padding: 20px 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+#header-nav {
+  background-color: #535857;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.container {
+  width: 50%;
+  margin: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card {
+  background-color: #535857BF;
+  color: white;
+}
+
+.card:hover {
+  text-emphasis: none;
+}
+
+.header {
+  font-size: 2em;
+}
+
+.lead {
+  color: #f2f2f2;
+  background: #ff4a4a;
+  font-size: 1.1em;
+  line-height: 74px;
+  font-weight: 700;
+  margin: 0 3px 21px;
+  padding: 6px;
+  margin: 0 3px 21px;
+  font-family: 'Libre Baskerville', serif; 
+}
+
+.name {
+  font-family: 'Indie Flower', cursive;
+}
+
+.test {
+  background-color: black;
 }
