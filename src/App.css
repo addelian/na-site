@@ -1,4 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap');
+
+* {
+  font-family: 'Mukata', sans-serif;
+}
 
 .page {
   background: url("/assets/images/hazy.jpg");
@@ -35,12 +39,15 @@
 }
 
 .card {
-  background-color: #535857BF;
-  color: white;
+  border-style: thin;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
-.card:hover {
-  text-emphasis: none;
+.cardDiv {
+  margin-top: 75px;
+  margin-bottom: 75px;
+  text-align: center;
 }
 
 .header {
@@ -57,10 +64,6 @@
   padding: 6px;
   margin: 0 3px 21px;
   font-family: 'Libre Baskerville', serif; 
-}
-
-.name {
-  font-family: 'Indie Flower', cursive;
 }
 
 .test {

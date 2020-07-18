@@ -22,7 +22,7 @@ const Header = (props) => {
                 <Jumbotron style={{'background-color': '#03719C', 'color': 'white'}} fluid className="mb-0">
                     <Container fluid>
                         <h1 className="name display-1">Nic Addelia</h1>
-                        <p>"The only proof he needed for the existence of God was <span className="lead"><em>music.</em></span>" - <em>Kurt Vonnegut</em></p>
+                        <p>Developer / Learner / Musician / Educator</p>
                     </Container>
                 </Jumbotron>
                     <Navbar sticky light expand="md" id="header-nav">
@@ -37,17 +37,17 @@ const Header = (props) => {
                                 </NavItem>
                                 <NavItem>
                                     <NavLink className="nav-link" to="/About">
-                                        <i className="fa fa-music fa-lg" /> About
+                                        <i className="fa fa-coffee fa-lg" /> About
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
                                     <NavLink className="nav-link" to="/projects">
-                                        <i className="fa fa-file fa-lg" /> Projects
+                                        <i className="fa fa-laptop fa-lg" /> Projects
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
                                     <NavLink className="nav-link" to="/contact">
-                                        <i className="fa fa-file fa-lg" /> Contact
+                                        <i className="fa fa-mobile fa-lg" /> Contact
                                     </NavLink>
                                 </NavItem>
                             </Nav>
