@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
 
 * {
-  font-family: 'Mukata', sans-serif;
+  font-family: 'Mukta', sans-serif;
 }
 
 .page {
@@ -42,6 +42,32 @@
   border-style: thin;
   padding-top: 50px;
   padding-bottom: 50px;
+}
+
+.bio {
+  text-align: center;
+  font-size: 24px;
+  align-items: center;
+}
+
+.nic-back {
+  background-image: url("./images/Nic.jpeg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #535857;
+  color: white;
+}
+
+.pic-space {
+  min-width: 100px;
+  min-height: 100px;
+}
+
+.center {
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .cardDiv {

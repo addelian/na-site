@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ReactCardFlip from 'react-card-flip';
 import { Card } from 'reactstrap';
+import Image from 'react-bootstrap/Image';
 
 class Projects extends Component {
     constructor(props) {
@@ -42,16 +43,20 @@ class Projects extends Component {
             <React.Fragment>
                 <div className="container">
                     <div className="row">
-                        <div className="col-md-6 cardDiv" onMouseEnter= {this.handleHover1} onMouseLeave ={this.handleHover1}>
+                        <div className="col-md-auto cardDiv" onMouseEnter= {this.handleHover1} onMouseLeave ={this.handleHover1}>
+                             {/* https://github.com/AaronCCWong/react-card-flip */}
                             <ReactCardFlip isFlipped={this.state.isFlipped1} flipDirection="vertical">
-                                <Card>
-                                    <div>
-                                        This is the front of the card!
+                                <Card className="nic-back">
+                                    <div className="pic-space">
+                                        Project 1
                                     </div>
                                 </Card>
-                                <Card>
-                                    <div>
-                                        This is the back of the card!
+                                <Card className="nic-back">
+                                    <div className="flip-info">
+                                        This is more information about the project.
+                                        <p>I used code on this.</p>
+                                        <p>I learned a lot doing it.</p>
+                                        <a href="#">Link here.</a>
                                     </div>
                                 </Card>
                             </ReactCardFlip> 
