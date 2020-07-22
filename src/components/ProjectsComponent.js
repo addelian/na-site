@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import ReactCardFlip from 'react-card-flip';
-import { Card } from 'reactstrap';
-import Image from 'react-bootstrap/Image';
+import { Card } from 'react-bootstrap';
 
 class Projects extends Component {
     constructor(props) {
@@ -41,17 +40,16 @@ class Projects extends Component {
     render() {
         return (
             <React.Fragment>
-                <div className="container">
-                    <div className="row">
-                        <div className="col-md-auto cardDiv" onMouseEnter= {this.handleHover1} onMouseLeave ={this.handleHover1}>
+                <div className="card-flex">
+                        <div onMouseEnter= {this.handleHover1} onMouseLeave ={this.handleHover1}>
                              {/* https://github.com/AaronCCWong/react-card-flip */}
-                            <ReactCardFlip isFlipped={this.state.isFlipped1} flipDirection="vertical">
-                                <Card className="nic-back">
-                                    <div className="pic-space">
-                                        Project 1
+                            <ReactCardFlip isFlipped={this.state.isFlipped1} flipDirection="horizontal">
+                                <Card className="nic-back tile-card">
+                                    <div className="flip-info">
+                                        <h1 style={{"margin-left": 10}}>Bootstrap Portfolio</h1>
                                     </div>
                                 </Card>
-                                <Card className="nic-back">
+                                <Card className="tile-card">
                                     <div className="flip-info">
                                         This is more information about the project.
                                         <p>I used code on this.</p>
@@ -61,51 +59,57 @@ class Projects extends Component {
                                 </Card>
                             </ReactCardFlip> 
                         </div>
-                        <div className="col-md-6 cardDiv" onMouseEnter= {this.handleHover2} onMouseLeave ={this.handleHover2}>
-                            <ReactCardFlip isFlipped={this.state.isFlipped2} flipDirection="vertical">
-                                <Card>
-                                    <div>
-                                        This is the front of the card!
+                        <div onMouseEnter= {this.handleHover2} onMouseLeave ={this.handleHover2}>
+                            <ReactCardFlip isFlipped={this.state.isFlipped2} flipDirection="horizontal">
+                                <Card className="yell-back tile-card">
+                                    <div className="flip-info">
+                                        <h1 style={{"margin-left": 10}}>Artist Site - Responsive</h1>
                                     </div>
                                 </Card>
-                                <Card>
-                                    <div>
-                                        This is the back of the card!
-                                    </div>
-                                </Card>
-                            </ReactCardFlip> 
-                        </div>
-                    </div>
-                    <div className="row">
-                        <div className="col-md-6 cardDiv" onMouseEnter= {this.handleHover3} onMouseLeave ={this.handleHover3}>
-                            <ReactCardFlip isFlipped={this.state.isFlipped3} flipDirection="vertical">
-                                <Card>
-                                    <div>
-                                        This is the front of the card!
-                                    </div>
-                                </Card>
-                                <Card>
-                                    <div>
-                                        This is the back of the card!
+                                <Card className="tile-card">
+                                    <div className="flip-info">
+                                        This is more information about the project.
+                                        <p>I used code on this.</p>
+                                        <p>I learned a lot doing it.</p>
+                                        <a href="#">Link here.</a>
                                     </div>
                                 </Card>
                             </ReactCardFlip> 
                         </div>
-                        <div className="col-md-6 cardDiv" onMouseEnter= {this.handleHover4} onMouseLeave ={this.handleHover4}>
-                            <ReactCardFlip isFlipped={this.state.isFlipped4} flipDirection="vertical">
-                                <Card>
-                                    <div>
-                                        This is the front of the card!
+                        <div onMouseEnter= {this.handleHover3} onMouseLeave ={this.handleHover3} className>
+                            <ReactCardFlip isFlipped={this.state.isFlipped3} flipDirection="horizontal">
+                                <Card className="hazy-back tile-card">
+                                    <div className="flip-info">
+                                        <h1 style={{"margin-left": 10}}>Artist Site - Mobile</h1>
                                     </div>
                                 </Card>
-                                <Card>
-                                    <div>
-                                        This is the back of the card!
+                                <Card className="tile-card">
+                                    <div className="flip-info">
+                                        This is more information about the project.
+                                        <p>I used code on this.</p>
+                                        <p>I learned a lot doing it.</p>
+                                        <a href="#">Link here.</a>
                                     </div>
                                 </Card>
                             </ReactCardFlip> 
                         </div>
-                    </div>
+                        <div onMouseEnter= {this.handleHover4} onMouseLeave ={this.handleHover4}>
+                            <ReactCardFlip isFlipped={this.state.isFlipped4} flipDirection="horizontal">
+                                <Card className="drums-back tile-card">
+                                    <div className="flip-info">
+                                        <h1 style={{"margin-left": 10}}>Node Backend</h1>
+                                    </div>
+                                </Card>
+                                <Card className="tile-card">
+                                    <div className="flip-info">
+                                        This is more information about the project.
+                                        <p>I used code on this.</p>
+                                        <p>I learned a lot doing it.</p>
+                                        <a href="#">Link here.</a>
+                                    </div>
+                                </Card>
+                            </ReactCardFlip> 
+                        </div>
                 </div>
             </React.Fragment>
         )

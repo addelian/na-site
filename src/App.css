@@ -50,8 +50,22 @@
   align-items: center;
 }
 
+.card-flex {
+  display: flex;
+  justify-content: space-around;
+}
+
+.tile-card {
+  height: 300px;
+  width: 300px;
+}
+
+Card h1 {
+  margin-left: 25px;
+}
+
 .nic-back {
-  background-image: url("./images/Nic.jpeg");
+  background-image: url("./images/nic-alt.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -59,21 +73,37 @@
   color: white;
 }
 
-.pic-space {
-  min-width: 100px;
-  min-height: 100px;
+.yell-back {
+  background-image: url("./images/yell.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #535857;
+  color: white;
+}
+
+.hazy-back {
+  background-image: url("./images/hazy.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #535857;
+  color: white;
+}
+
+.drums-back {
+  background-image: url("./images/drums.jpeg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #535857;
+  color: white;
 }
 
 .center {
   margin: 0 auto;
   margin-top: 10px;
   margin-bottom: 10px;
-}
-
-.cardDiv {
-  margin-top: 75px;
-  margin-bottom: 75px;
-  text-align: center;
 }
 
 .header {
