@@ -46,15 +46,15 @@ class Projects extends Component {
                             <ReactCardFlip isFlipped={this.state.isFlipped1} flipDirection="horizontal">
                                 <Card className="nic-back tile-card">
                                     <div className="flip-info">
-                                        <h1 style={{"margin-left": 10}}>Bootstrap Portfolio</h1>
+                                        <h1>Bootstrap Portfolio</h1>
                                     </div>
                                 </Card>
                                 <Card className="tile-card">
+                                    <img className="code-icon flip-info" src={require("../images/vscode.png")}/><br/>
                                     <div className="flip-info">
-                                        This is more information about the project.
-                                        <p>I used code on this.</p>
-                                        <p>I learned a lot doing it.</p>
-                                        <a href="#">Link here.</a>
+                                        My original developer portfolio site.
+                                        <p>Built primarily in HTML / CSS / JavaScript, using Bootstrap 4.</p>
+                                        <a href="https://github.com/addelian/na-percussion">GitHub Repo</a>
                                     </div>
                                 </Card>
                             </ReactCardFlip> 
